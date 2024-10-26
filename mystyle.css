@@ -16,3 +16,12 @@ h1,h2,h3{
     padding-bottom: 20px;
     padding-top: 20px;
 }
+/*utilties*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.background-size{
+    margin: 0px;
+    padding: 0px;
+}
