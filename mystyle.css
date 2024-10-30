@@ -3,16 +3,16 @@
     margin:0;
     padding:0;
 }
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
-p{
+p {
     line-height: 2;
 }
-a{
+a {
     text-decoration: none;
 }
-h1,h2,h3{
+h1,h2,h3 {
     padding-bottom: 20px;
     padding-top:20px;
 }
@@ -20,6 +20,7 @@ h1,h2,h3{
 /* header */
 .site-header {
     background-image: url(./img/header.jpg);
+    
     height: 400px;
     background-size: cover ;
     background-position: top right;
@@ -31,11 +32,29 @@ h1,h2,h3{
     padding-right: 30px;
 }
 
+.bar-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-header {
+    display: flex;
+    height: 400px;
+    background-size: cover;
+    background-position: top right;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* about */
@@ -45,19 +64,30 @@ h1,h2,h3{
 }
 
 /*houses*/
-.houses-container{
+
+.houses-main-container{
     display: flex;
+    gap: 10px;
+}
+
+
+.houses-container {
+    display: flex;
+    flex-direction: column;
 }
 .houses-item{
     background-color: #dedede;
     margin-right: 10px;
 }
-.houses-item-img{
+.houses-item-img {
     width:100%;
     height: auto;
 
 }
-.houses-item-text{
+img {
+    max-width: 100%;
+}
+.houses-item-text {
     padding: 20px;
     
 }
@@ -65,13 +95,14 @@ h1,h2,h3{
     color:green;
     font-weight: bold;
 }
-.icon-container{
+.icon-container {
     display: flex;
 }
-.icon-container img{
+.icon-container img {
     margin-right: 20px;
 }
-.icons-list{
+
+.icons-list {
     display: flex;
     justify-content: space-between;
 }
@@ -85,4 +116,52 @@ h1,h2,h3{
     padding: 5px;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+/* contact */
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    height: 150px;
+    color: black;
+}
+
+.contact-header a {
+    color: black;
+}
+.contact-container {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background-color: #dedede;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 16px;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer-container {
+    background: grey;
+    height: 100px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 250px;
+}
+
+.contact-infomation {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
 }
